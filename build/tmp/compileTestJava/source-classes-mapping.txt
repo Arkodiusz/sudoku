@@ -1,0 +1,2 @@
+com/sudoku/SudokuTestSuite.java
+ com.sudoku.SudokuTestSuite
