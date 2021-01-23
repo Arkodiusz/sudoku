@@ -1,2 +1,8 @@
+com/sudoku/Board.java
+ com.sudoku.Board
 com/sudoku/Sudoku.java
  com.sudoku.Sudoku
+com/sudoku/Ui.java
+ com.sudoku.Ui
+com/sudoku/Cell.java
+ com.sudoku.Cell

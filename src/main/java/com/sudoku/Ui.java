@@ -1,2 +1,23 @@
-package com.sudoku;public class Ui {
+package com.sudoku;
+
+import java.util.Scanner;
+
+public class Ui {
+    Scanner sc = new Scanner(System.in);
+
+    public Cell get() {
+        int x;
+        int y;
+        int val;
+
+        System.out.print("column = ");
+        x = sc.nextInt();
+        System.out.print("row = ");
+        y = sc.nextInt();
+        System.out.print("value = ");
+        val = sc.nextInt();
+
+        return new Cell (x, y, val);
+    }
+
 }
