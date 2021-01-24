@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Ui {
     Scanner sc = new Scanner(System.in);
 
-    public Cell get() {
+    public Cell getCell() {
         int x;
         int y;
         int val;
 
         System.out.print("column = ");
-        x = sc.nextInt();
+        x = sc.nextInt()-1;
         System.out.print("row = ");
-        y = sc.nextInt();
+        y = sc.nextInt()-1;
         System.out.print("value = ");
         val = sc.nextInt();
 

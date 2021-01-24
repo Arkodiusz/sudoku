@@ -12,7 +12,7 @@ public class Sudoku {
         Ui ui = new Ui();
 
         board.print();
-        board.put(ui.get());
+        board.put(ui.getCell());
         board.print();
     }
 }
