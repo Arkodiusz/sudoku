@@ -10,6 +10,7 @@ public class Ui {
         int y;
         int val;
 
+        //validation
         System.out.print("column = ");
         x = sc.nextInt()-1;
         System.out.print("row = ");
