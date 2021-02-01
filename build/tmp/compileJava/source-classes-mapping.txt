@@ -1,7 +1,9 @@
-com/sudoku/Cell.java
- com.sudoku.Cell
 com/sudoku/Board.java
  com.sudoku.Board
+com/sudoku/Conflicts.java
+ com.sudoku.Conflicts
+com/sudoku/Cell.java
+ com.sudoku.Cell
 com/sudoku/Sudoku.java
  com.sudoku.Sudoku
 com/sudoku/Ui.java

@@ -10,3 +10,4 @@ public class Cell {
     private int y;
     private int val;
 }
+
