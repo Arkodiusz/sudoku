@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import java.util.*;
 
 @Getter
-@NoArgsConstructor
 public class Board {
 
     private int[][] board = new int[9][9];

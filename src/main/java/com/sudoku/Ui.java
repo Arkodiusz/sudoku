@@ -59,16 +59,16 @@ public class Ui {
         System.out.println("\nEdit cell");
 
         System.out.print("column = ");
-        x = validateInput() - 1;
+        x = validateCoordinates() - 1;
         System.out.print("row = ");
-        y = validateInput() - 1;
+        y = validateCoordinates() - 1;
         System.out.print("value = ");
-        val = validateInput();
+        val = validateValue();
 
         return new Cell (x, y, val);
     }
 
-    private int validateInput() {
+    private int validateCoordinates() {
         int i = 0;
         int number;
         do {
@@ -83,6 +83,25 @@ public class Ui {
                 System.out.println("Out of bounds!");
             }
         } while (number < 1 || number > 9);
+        System.out.println("Thank you! Got " + number);
+        return number;
+    }
+
+    private int validateValue() {
+        int i = 0;
+        int number;
+        do {
+            i++;
+            while (!sc.hasNextInt()) {
+                i++;
+                System.out.println("That's not a number!");
+                sc.next();
+            }
+            number = sc.nextInt();
+            if (i!=0 && (number < 0 || number > 9)) {
+                System.out.println("Out of bounds!");
+            }
+        } while (number < 0 || number > 9);
         System.out.println("Thank you! Got " + number);
         return number;
     }
